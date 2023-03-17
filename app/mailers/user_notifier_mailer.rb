@@ -7,6 +7,6 @@ class UserNotifierMailer < ApplicationMailer
   # send signup email to user
   def send_signup_email(user)
     @user = user
-    mail(to: @user.email, subject: "Welcome to Inventory Management Services #{@user.first_name}")
+    mail(to: @user.email, subject: "Welcome to Inventory Management Service #{@user.first_name}")
   end
 end
